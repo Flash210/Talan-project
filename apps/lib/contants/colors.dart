@@ -16,6 +16,6 @@ const tDarkColor = Color(0xFF000000);
 
 // on bording
 
-const tOnBordingPage1Color = Colors.white;
+const tOnBordingPage1Color = Color.fromARGB(255, 209, 211, 91);
 const tOnBoardingPage2Color = Color(0xfffddcdf);
-const tOnBoardingPage3Color = Color(0xffffdcbd);
+const tOnBoardingPage3Color = Color.fromARGB(255, 157, 155, 245);
