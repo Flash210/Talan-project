@@ -12,7 +12,7 @@ class SplashScreenController extends GetxController {
     animate.value = true;
     await Future.delayed(const Duration(milliseconds: 5000));
 
-    Get.to(const OnBoardingScreen());
+    Get.to( OnBoardingScreen());
 
     // Navigator.pushReplacement(
     //    context, MaterialPageRoute(builder: (context) => WelcomeScreen()));

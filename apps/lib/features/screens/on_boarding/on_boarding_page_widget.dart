@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../contants/colors.dart';
 import '../../../contants/sizes.dart';
 import '../../../contants/text_strings.dart';
 import '../../models/model_onBoarding.dart';
