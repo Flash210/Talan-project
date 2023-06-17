@@ -22,7 +22,7 @@ class TOutlinedBtnTheme {
          style: OutlinedButton.styleFrom(
                         shape: const RoundedRectangleBorder(),
                         foregroundColor: tWhiteColor,
-                        side: const BorderSide(color: tSecondaryColor),
+                        side: const BorderSide(color: tPrimaryColor),
                         padding:const  EdgeInsets.symmetric(vertical: tButtonHeight)
                       ),
       );

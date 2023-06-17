@@ -24,3 +24,14 @@ const String tWelcomeSubTitle =
 //generic texts
 const String tLogin = "Login";
 const String tSignUp = "Sign Up ";
+
+//Login Screen Texts
+const String tLoginTitle = "Welcome Back, ";
+const String tLoginSubTitle = "Make it Work , make it fast ,make it right . ";
+const String tRememberMe = "Remember me ";
+const String tAlready = "ALready Have an Account  ";
+const String tEmail = "E-Mail";
+const String tPAssword = "Password";
+const String tForgetPassword = "Forget Password ? ";
+const String tSignInWithGoogle = "Sign-In with Google ";
+const String tDontHaveAccount = "Don't ave an account ? ";

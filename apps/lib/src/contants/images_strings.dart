@@ -7,3 +7,5 @@ const String page2 = "assets/images/on_borading_widgets/youtube.png";
 const String page3 = "assets/images/on_borading_widgets/code.png";
 
 const String tWelcome_img = "assets/images/welcome_images/wc.png";
+
+const String google_img = "assets/images/welcome_images/google.png";
