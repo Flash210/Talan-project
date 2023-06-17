@@ -1,14 +1,10 @@
-import 'package:apps/contants/colors.dart';
-import 'package:apps/contants/images_strings.dart';
-import 'package:apps/contants/text_strings.dart';
-import 'package:apps/features/auth/controllers/on_boarding_controller.dart';
-import 'package:apps/features/models/model_onBoarding.dart';
+import 'package:apps/src/contants/colors.dart';
+import 'package:apps/src/features/auth/controllers/on_boarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import 'on_boarding_page_widget.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});

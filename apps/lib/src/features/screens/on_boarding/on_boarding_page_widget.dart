@@ -30,7 +30,7 @@ class onBoardingPageWidget extends StatelessWidget {
               height: size.height * 0.5,
             ),
             Text(m.title,
-                style: Theme.of(context).textTheme.titleLarge),
+                style: Theme.of(context).textTheme.headline1),
             const Text(
               tOnBoardingSub1,
               textAlign: TextAlign.center,
@@ -38,7 +38,7 @@ class onBoardingPageWidget extends StatelessWidget {
           ],
         ),
         Text(m.counterText,
-            style: Theme.of(context).textTheme.titleLarge),
+            style: Theme.of(context).textTheme.headline4),
         const SizedBox(
           height: 50.0,
         )
