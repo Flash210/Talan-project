@@ -34,4 +34,16 @@ const String tEmail = "E-Mail";
 const String tPAssword = "Password";
 const String tForgetPassword = "Forget Password ? ";
 const String tSignInWithGoogle = "Sign-In with Google ";
-const String tDontHaveAccount = "Don't ave an account ? ";
+const String tDontHaveAccount = "Don't have an account ? ";
+
+// login widget Texts
+const String tSignUpTitle = "Get On Board!";
+
+const String tSignUpSubTitle =
+    "Create your profile to start your journey with us .. ";
+
+const String tAlreadyHaveAccount = "Already have an Account ?";
+
+const String tFullName = "Full Name";
+const String tPhone = "Phone Number ";
+const String tPassword = "Password";
