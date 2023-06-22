@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../../contants/sizes.dart';
 import '../../../contants/text_strings.dart';
-import '../forget_password/forget_password_options/forget_pass_widget.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({

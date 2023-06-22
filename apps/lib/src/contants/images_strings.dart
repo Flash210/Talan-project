@@ -9,3 +9,5 @@ const String page3 = "assets/images/on_borading_widgets/code.png";
 const String tWelcome_img = "assets/images/welcome_images/wc.png";
 
 const String google_img = "assets/images/welcome_images/google.png";
+
+const String tForgetPassImg ="assets/images/forget_pass/for.png";
