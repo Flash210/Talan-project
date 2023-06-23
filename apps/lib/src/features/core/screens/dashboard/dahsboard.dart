@@ -145,6 +145,7 @@ class DashBoard extends StatelessWidget {
 // ******************** Banner ********************
 
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
                       child: Container(
@@ -153,51 +154,220 @@ class DashBoard extends StatelessWidget {
                         color: tCardBgColor),
                     padding: const EdgeInsets.symmetric(
                         horizontal: 10, vertical: 20),
-                    child:  Column(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                      const   Row(
+                        const Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Flexible(child: Image(image: AssetImage(tTag),height: 30,)),
+                            Flexible(
+                                child: Image(
+                              image: AssetImage(tTag),
+                              height: 30,
+                            )),
                             Flexible(
                                 child: Image(
                               image: AssetImage(tTeach),
-                          
                             )),
                           ],
                         ),
-                        const  SizedBox(height: 25),
+                        const SizedBox(height: 25),
                         Text(
                           tDashBoardBannerTitle1,
                           style: txtTheme.headline4,
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),
-
                         Text(
-                          tDashBoardBannerTitle2,
+                          tDashBoardSubTitle,
+                          style: txtTheme.bodyText2,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                         ),
                       ],
                     ),
                   )),
-
+                  const SizedBox(
+                    width: tDashBoardPadding,
+                  ),
                   Expanded(
-                    child:Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: tCardBgColor),
-                          padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-                        )
-                      ],
-                    ) 
-                  
+                    child: Column(children: [
+                      Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: tCardBgColor),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Flexible(
+                                    child: Image(
+                                  image: AssetImage(tTag),
+                                  height: 30,
+                                )),
+                                Flexible(
+                                    child: Image(
+                                  image: AssetImage(tTeach),
+                                )),
+                              ],
+                            ),
+                            const SizedBox(height: 25),
+                            Text(
+                              tDashBoardBannerTitle2,
+                              style: txtTheme.headline4,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              tDashBoardSubTitle,
+                              style: txtTheme.bodyText2,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                          width: double.infinity,
+                          child: OutlinedButton(
+                              onPressed: () {},
+                              child: const Text(tDashBoardButton)))
+                    ]),
                   )
                 ],
-              )
+              ),
+
+              //************** Top Courses  */
+              const SizedBox(height: tDashBoardPadding - 4),
+
+              Text(tDashBoardTopCourses,
+                  style: txtTheme.headline4?.apply(fontSizeFactor: 1.2)),
+
+              SizedBox(
+                height: 200,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  children: [
+                    SizedBox(
+                      width: 320,
+                      height: 200,
+                      child: Padding(
+
+                        padding: const EdgeInsets.only(right: 10,top: 10),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: tCardBgColor),
+                          padding: const EdgeInsets.all(7),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      "Flutter Crash course ",
+                                      style: txtTheme.headline4,
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                                  const Flexible(
+                                      child: Image(image: AssetImage(tTop))),
+                                ],
+                              ),
+                              SizedBox(height: 6),
+                              Row(
+                                children: [
+                                  ElevatedButton(
+                                      onPressed: () {},
+                                      style: ElevatedButton.styleFrom(
+                                          shape: const CircleBorder()),
+                                      child: const Icon(Icons.play_arrow)),
+                                  const SizedBox(width: tDashBoardPadding),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("3 Sections",
+                                          style: txtTheme.headline4,
+                                          overflow: TextOverflow.ellipsis),
+                                      Text("Programming Languages ",
+                                          style: txtTheme.bodyText2,
+                                          overflow: TextOverflow.ellipsis),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+
+
+                     SizedBox(
+                      width: 320,
+                      height: 200,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: tCardBgColor),
+                        padding: const EdgeInsets.all(7),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Flexible(
+                                  child: Text(
+                                    "Flutter Crash course ",
+                                    style: txtTheme.headline4,
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                ),
+                                const Flexible(
+                                    child: Image(image: AssetImage(tTop))),
+                              ],
+                            ),
+                            SizedBox(height: 6),
+                            Row(
+                              children: [
+                                ElevatedButton(
+                                    onPressed: () {},
+                                    style: ElevatedButton.styleFrom(
+                                        shape: const CircleBorder()),
+                                    child: const Icon(Icons.play_arrow)),
+                                const SizedBox(width: tDashBoardPadding),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("3 Sections",
+                                        style: txtTheme.headline4,
+                                        overflow: TextOverflow.ellipsis),
+                                    Text("Programming Languages ",
+                                        style: txtTheme.bodyText2,
+                                        overflow: TextOverflow.ellipsis),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
