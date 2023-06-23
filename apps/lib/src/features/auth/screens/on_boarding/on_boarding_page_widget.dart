@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../contants/sizes.dart';
-import '../../../contants/text_strings.dart';
+import '../../../../contants/sizes.dart';
+import '../../../../contants/text_strings.dart';
 import '../../models/model_onBoarding.dart';
 
 class onBoardingPageWidget extends StatelessWidget {

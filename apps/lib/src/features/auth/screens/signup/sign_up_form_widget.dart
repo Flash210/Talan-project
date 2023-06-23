@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../contants/sizes.dart';
-import '../../../contants/text_strings.dart';
+import '../../../../contants/sizes.dart';
+import '../../../../contants/text_strings.dart';
 
 class SignUpFormWIdget extends StatelessWidget {
   const SignUpFormWIdget({

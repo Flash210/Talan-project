@@ -1,8 +1,8 @@
-import 'package:apps/src/features/screens/forget_password/forget_password_options/show_btn_sheet.dart';
+import 'package:apps/src/features/auth/screens/forget_password/forget_password_options/show_btn_sheet.dart';
 import 'package:flutter/material.dart';
 
-import '../../../contants/sizes.dart';
-import '../../../contants/text_strings.dart';
+import '../../../../contants/sizes.dart';
+import '../../../../contants/text_strings.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({

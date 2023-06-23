@@ -1,10 +1,10 @@
-import 'package:apps/src/features/screens/forget_password/forget_password_email/forget_password_mail.dart';
+import 'package:apps/src/features/auth/screens/forget_password/forget_password_email/forget_password_mail.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import '../../../../contants/sizes.dart';
-import '../../../../contants/text_strings.dart';
+import '../../../../../contants/sizes.dart';
+import '../../../../../contants/text_strings.dart';
 import 'forget_pass_widget.dart';
 
 class ShowBtnSheet {

@@ -4,12 +4,12 @@ import 'package:apps/src/contants/sizes.dart';
 import 'package:apps/src/contants/text_strings.dart';
 import 'package:apps/src/fade_in_animation/animation_design.dart';
 import 'package:apps/src/fade_in_animation/fade_animation_model.dart';
-import 'package:apps/src/features/screens/login/login_screen.dart';
-import 'package:apps/src/features/screens/signup/sign_up.dart';
+import 'package:apps/src/features/auth/screens/login/login_screen.dart';
+import 'package:apps/src/features/auth/screens/signup/sign_up.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../fade_in_animation/fade_in_animation_controller.dart';
+import '../../../../fade_in_animation/fade_in_animation_controller.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});

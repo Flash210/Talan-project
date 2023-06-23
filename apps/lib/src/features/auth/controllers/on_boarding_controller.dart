@@ -4,8 +4,8 @@ import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
 import '../../../contants/colors.dart';
 import '../../../contants/images_strings.dart';
 import '../../../contants/text_strings.dart';
-import '../../models/model_onBoarding.dart';
-import '../../screens/on_boarding/on_boarding_page_widget.dart';
+import '../models/model_onBoarding.dart';
+import '../screens/on_boarding/on_boarding_page_widget.dart';
 
 class OnBoardingController extends GetxController {
   final controller = LiquidController();

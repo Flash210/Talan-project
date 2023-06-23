@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../contants/images_strings.dart';
-import '../../../contants/sizes.dart';
-import '../../../contants/text_strings.dart';
+import '../../../../contants/images_strings.dart';
+import '../../../../contants/sizes.dart';
+import '../../../../contants/text_strings.dart';
 
 
 

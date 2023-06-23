@@ -1,3 +1,4 @@
+import 'package:apps/src/features/core/screens/dashboard/dahsboard.dart';
 import 'package:apps/src/screens/spalsh_screen/splash_screen.dart';
 import 'package:apps/src/utils/theme/widget_themes/theme.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,9 @@ class MyApp extends StatelessWidget {
       darkTheme: TAppTheme.darTheme,
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      defaultTransition: Transition.leftToRightWithFade,
+      transitionDuration: const Duration(milliseconds: 500),
+      home: const DashBoard(),
     );
   }
 }

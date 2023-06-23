@@ -1,4 +1,4 @@
-import 'package:apps/src/features/screens/welcome/welcome_screen.dart';
+import 'package:apps/src/features/auth/screens/welcome/welcome_screen.dart';
 import 'package:get/get.dart';
 
 class FadeInAnimationController extends GetxController {

@@ -10,4 +10,6 @@ const String tWelcome_img = "assets/images/welcome_images/wc.png";
 
 const String google_img = "assets/images/welcome_images/google.png";
 
-const String tForgetPassImg ="assets/images/forget_pass/for.png";
+const String tForgetPassImg = "assets/images/forget_pass/for.png";
+
+const String tUserProfileImg = "assets/images/dashbaord/pp.png";

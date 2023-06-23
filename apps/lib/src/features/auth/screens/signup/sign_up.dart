@@ -2,7 +2,7 @@ import 'package:apps/src/commun_widget/form/form_widget.dart';
 import 'package:apps/src/contants/images_strings.dart';
 import 'package:apps/src/contants/sizes.dart';
 import 'package:apps/src/contants/text_strings.dart';
-import 'package:apps/src/features/screens/signup/sign_upt_footer.dart';
+import 'package:apps/src/features/auth/screens/signup/sign_upt_footer.dart';
 import 'package:flutter/material.dart';
 
 import 'sign_up_form_widget.dart';
