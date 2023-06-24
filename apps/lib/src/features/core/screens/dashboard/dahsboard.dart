@@ -2,6 +2,8 @@ import 'package:apps/src/contants/colors.dart';
 import 'package:apps/src/contants/images_strings.dart';
 import 'package:apps/src/contants/sizes.dart';
 import 'package:apps/src/contants/text_strings.dart';
+import 'package:apps/src/features/core/screens/dashboard/widgets/dash_app_bar.dart';
+import 'package:apps/src/features/core/screens/dashboard/widgets/dash_categories.dart';
 import 'package:flutter/material.dart';
 
 class DashBoard extends StatelessWidget {
@@ -13,23 +15,7 @@ class DashBoard extends StatelessWidget {
     return Scaffold(
       // ******************* App Bar *********************
 
-      appBar: AppBar(
-        leading: const Icon(Icons.menu, color: Colors.black),
-        title: Text(TAppName, style: Theme.of(context).textTheme.headline4),
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-        actions: [
-          Container(
-            margin: const EdgeInsets.only(right: 20, top: 7),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10), color: tCardBgColor),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Image(image: AssetImage(tUserProfileImg)),
-            ),
-          )
-        ],
-      ),
+      appBar:const  DashBoardAppBar(),
       // ******************* ENd App Bar *********************
       body: SingleChildScrollView(
         child: Container(
@@ -63,83 +49,7 @@ class DashBoard extends StatelessWidget {
               /////////*  *************  End Search Box ************************
 
               // Categories
-              SizedBox(
-                height: 45,
-                child: ListView(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    SizedBox(
-                      width: 170,
-                      height: 50,
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 45,
-                            height: 45,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: tDarkColor),
-                            child: Center(
-                              child: Text("JS",
-                                  style: txtTheme.headline6
-                                      ?.apply(color: Colors.white)),
-                            ),
-                          ),
-                          const SizedBox(width: 5),
-                          Flexible(
-                              child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text("Java Script",
-                                  style: txtTheme.headline6,
-                                  overflow: TextOverflow.ellipsis),
-                              Text("10 Lessons",
-                                  style: txtTheme.bodyText2,
-                                  overflow: TextOverflow.ellipsis),
-                            ],
-                          )),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 170,
-                      height: 50,
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 45,
-                            height: 45,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: tDarkColor),
-                            child: Center(
-                              child: Text("JS",
-                                  style: txtTheme.headline6
-                                      ?.apply(color: Colors.white)),
-                            ),
-                          ),
-                          const SizedBox(width: 5),
-                          Flexible(
-                              child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text("Java Script",
-                                  style: txtTheme.headline6,
-                                  overflow: TextOverflow.ellipsis),
-                              Text("10 Lessons",
-                                  style: txtTheme.bodyText2,
-                                  overflow: TextOverflow.ellipsis),
-                            ],
-                          )),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              DashBoardCategories(txtTheme: txtTheme),
               const SizedBox(height: tDashBoardPadding),
 
 // ******************** Banner ********************
@@ -375,3 +285,4 @@ class DashBoard extends StatelessWidget {
     );
   }
 }
+
