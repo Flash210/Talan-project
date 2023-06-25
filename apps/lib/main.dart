@@ -1,10 +1,17 @@
-import 'package:apps/src/features/core/screens/dashboard/dahsboard.dart';
+import 'package:apps/firebase_options.dart';
+import 'package:apps/src/repository/auth_repo/auth_repo.dart';
 import 'package:apps/src/screens/spalsh_screen/splash_screen.dart';
 import 'package:apps/src/utils/theme/widget_themes/theme.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main() {
+// before generating widget swe have to tell main app to initialize the Firebase 
+
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then((value) => Get.put(AuthenticationRepository()));
+
   runApp(const MyApp());
 }
 
@@ -21,7 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.leftToRightWithFade,
       transitionDuration: const Duration(milliseconds: 500),
-      home: const DashBoard(),
+      home: CircularProgressIndicator(),
     );
   }
 }
