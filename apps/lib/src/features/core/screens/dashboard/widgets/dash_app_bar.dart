@@ -1,7 +1,11 @@
+import 'package:apps/src/features/core/screens/dashboard/widgets/profile/profile_screen.dart';
 import 'package:apps/src/repository/auth_repo/auth_repo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
+import '../../../../../../welcome_screen.dart';
 import '../../../../../contants/colors.dart';
 import '../../../../../contants/images_strings.dart';
 import '../../../../../contants/text_strings.dart';
@@ -25,7 +29,9 @@ class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget {
               borderRadius: BorderRadius.circular(10), color: tCardBgColor),
           child: IconButton(
             onPressed: () {
-              AuthenticationRepository.intance.logout();
+           //   AuthenticationRepository.intance.logout();
+               Get.to( const ProfileScreen());
+
             },
             icon: const Image(image: AssetImage(tUserProfileImg)),
           ),
