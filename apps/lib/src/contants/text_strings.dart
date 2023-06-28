@@ -72,8 +72,26 @@ const String tDashBoardHeading = "Explore Courses";
 const String tDashBoardSearch = "Search ..";
 const String tDashBoardBannerTitle1 = "Android for Beginners";
 const String tDashBoardBannerTitle2 = "Java";
-const String tDashBoardSubTitle= "10 lessons";
-const String tDashBoardButton= "View All";
-const String tDashBoardTopCourses= "Top Courses ";
+const String tDashBoardSubTitle = "10 lessons";
+const String tDashBoardButton = "View All";
+const String tDashBoardTopCourses = "Top Courses ";
+
+// Profile Screen Text
+const String tProfile = "Profile ";
+const String tEditProfile = "Edit Profile ";
+const String tLogOutDialogHeading = "LogOut ";
+const String tProfileHeading = "Coding With ";
+const String tProfileSubHeading = "xxx@xxx.com ";
+
+//menu
+const String tMenu1 = "Settings ";
+const String tMenu4 = "Information ";
+const String tMenu2 = "Billing Details ";
+const String tMenu3 = "User Managment ";
+
+//update profile screnn
+const String tDelete = "Delete ";
+const String tJoined = "Joined ";
+const String tJoinedAt = "31 decelber 2022 ";
 
 

@@ -1,6 +1,5 @@
 import 'package:apps/firebase_options.dart';
 import 'package:apps/src/repository/auth_repo/auth_repo.dart';
-import 'package:apps/src/screens/spalsh_screen/splash_screen.dart';
 import 'package:apps/src/utils/theme/widget_themes/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

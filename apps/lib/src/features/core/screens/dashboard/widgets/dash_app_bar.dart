@@ -1,3 +1,4 @@
+import 'package:apps/src/repository/auth_repo/auth_repo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -5,7 +6,7 @@ import '../../../../../contants/colors.dart';
 import '../../../../../contants/images_strings.dart';
 import '../../../../../contants/text_strings.dart';
 
-class DashBoardAppBar extends StatelessWidget  implements PreferredSizeWidget{
+class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DashBoardAppBar({
     super.key,
   });
@@ -23,15 +24,17 @@ class DashBoardAppBar extends StatelessWidget  implements PreferredSizeWidget{
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10), color: tCardBgColor),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              AuthenticationRepository.intance.logout();
+            },
             icon: const Image(image: AssetImage(tUserProfileImg)),
           ),
         )
       ],
     );
   }
-  
+
   @override
   // TODO: implement preferredSize
-  Size get preferredSize =>const  Size.fromHeight(55);
+  Size get preferredSize => const Size.fromHeight(55);
 }
