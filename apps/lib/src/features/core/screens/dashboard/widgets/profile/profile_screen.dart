@@ -4,7 +4,6 @@ import 'package:apps/src/contants/sizes.dart';
 import 'package:apps/src/contants/text_strings.dart';
 import 'package:apps/src/features/core/screens/dashboard/widgets/profile/update_profile_screen.dart';
 import 'package:apps/src/features/core/screens/dashboard/widgets/profile/widget/profile_menu_widget.dart';
-import 'package:apps/src/features/core/screens/dashboard/widgets/profile_menu_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';

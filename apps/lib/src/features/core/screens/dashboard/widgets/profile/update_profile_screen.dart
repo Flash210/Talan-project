@@ -1,7 +1,5 @@
 
-
 import 'package:apps/src/contants/sizes.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
@@ -20,7 +18,9 @@ class UpdateProfile extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-            onPressed: () => Get.back(), icon: Icon(LineAwesomeIcons.angle_left)),
+            onPressed: () => Get.back(), 
+            icon: Icon(LineAwesomeIcons.angle_left)
+            ),
         title: Text(tProfile, style: Theme.of(context).textTheme.headline4),
         
       ),

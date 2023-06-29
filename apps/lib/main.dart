@@ -1,5 +1,4 @@
 import 'package:apps/firebase_options.dart';
-import 'package:apps/src/features/core/screens/dashboard/widgets/profile/profile_screen.dart';
 import 'package:apps/src/repository/auth_repo/auth_repo.dart';
 import 'package:apps/src/screens/spalsh_screen/splash_screen.dart';
 import 'package:apps/src/utils/theme/widget_themes/theme.dart';
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.leftToRightWithFade,
       transitionDuration: const Duration(milliseconds: 500),
-      home: ProfileScreen(),
+      home: SplashScreen(),
     );
   }
 }
