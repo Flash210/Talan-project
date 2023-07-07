@@ -9,9 +9,9 @@ import 'package:get/get.dart';
 void main() {
 // before generating widget swe have to tell main app to initialize the Firebase 
 
-  WidgetsFlutterBinding.ensureInitialized();
+ /* WidgetsFlutterBinding.ensureInitialized();
   Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then((value) => Get.put(AuthenticationRepository()));
-
+*/
   runApp(const MyApp());
 }
 

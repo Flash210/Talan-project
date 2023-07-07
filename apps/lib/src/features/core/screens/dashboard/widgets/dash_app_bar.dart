@@ -7,6 +7,7 @@ import 'package:get/get_core/src/get_main.dart';
 import '../../../../../contants/colors.dart';
 import '../../../../../contants/images_strings.dart';
 import '../../../../../contants/text_strings.dart';
+import '../../../../../repository/auth_repo/auth_repo.dart';
 
 class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DashBoardAppBar({
@@ -27,8 +28,8 @@ class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget {
               borderRadius: BorderRadius.circular(10), color: tCardBgColor),
           child: IconButton(
             onPressed: () {
-           //   AuthenticationRepository.intance.logout();
-               Get.to( const ProfileScreen());
+              AuthenticationRepository.intance.logout();
+            //   Get.to( const ProfileScreen());
 
             },
             icon: const Image(image: AssetImage(tUserProfileImg)),
